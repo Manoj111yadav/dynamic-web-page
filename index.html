@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>home page</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+      <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Moments<img src="logo.jpg" alt="" class="logo" style="width:50px"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="menubar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+		<div class="container">
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="1m.jpg"></div>
+    <div class="swiper-slide"><img src="2m.jpg"></div>
+	<div class="swiper-slide"><img src="3m.jpg"></div>
+
+
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+</div>
+		
+    </header>
+	<div class="about-section">
+        <div class="inner-width">
+          <h1>About Us</h1>
+          <div class="border"></div>
+          <div class="about-section-row">
+            <div class="about-section-col">
+              <div class="about">
+                <p>
+Flowers have always been symbolic of various meanings, such as purity, joy, and love. By combining flowers and their meanings, you can create an arrangement that is more than just beautiful. Here are several flowers that are traditionally associated with Memorial Day. » MORE: Leave a legacy without leaving your home. Make your will today.                </p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+            <div class="about-section-col">
+              <div class="skills">
+                <div class="skill">
+                  <div class="title">Trust</div>
+                  <div class="progress">
+                    <div class="progress-bar p1"><span>100%</span></div>
+                  </div>
+                </div>
+ 
+                <div class="skill">
+                  <div class="title">Fresh Flowers</div>
+                  <div class="progress">
+                    <div class="progress-bar p2"><span>100%</span></div>
+                  </div>
+                </div>
+ 
+                <div class="skill">
+                  <div class="title">D</div>
+                  <div class="progress">
+                    <div class="progress-bar p3"><span>0%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	<div> 
+	<figure class="snip1533">
+	
+  <figcaption>
+    <blockquote>
+      <p>Flowers have always been symbolic of various meanings, such as purity, joy, and love. </p>
+    </blockquote>
+    <h3>Ravi </h3>
+    <h4>Google Inc.</h4>
+  </figcaption>
+</figure>
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p>Flowers have always been symbolic of various meanings, such as purity, joy, and love. </p>
+    </blockquote>
+    <h3>Rahul</h3>
+    <h4>Facebook</h4>
+  </figcaption>
+</figure>
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p>Flowers have always been symbolic of various meanings, such as purity, joy, and love. </p>
+    </blockquote>
+    <h3>Bipin</h3>
+    <h4>Twitter</h4>
+  </figcaption>
+</figure>
+	</div>
+	
+	<footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="logo.jpg" alt="" class="logo">
+          
+         <h1 class="rights-text" style="text-style:bold"></b>Moments</h1>
+        </div>
+ 
+        <div class="right-col">
+          <h1>Our Newsletter</h1>
+          <div class="border"></div>
+          <p>Enter Your Email to get our news and updates.</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Enter Your Email">
+            <input type="submit" class="btn" value="submit">
+          </form>
+        </div>
+      </div>
+    </footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+const menubar = document.querySelector(".menubar");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
+
+menubar.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+    menubar.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    menubar.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+
+const swiper = new Swiper('.swiper', {
+  autoplay:{
+  delay:4000,
+  disableOnInteraction:false,
+  
+  },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+	clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+
+
+    </script>
+
+</body>
+ 
+</html>
